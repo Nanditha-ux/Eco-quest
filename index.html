@@ -1,11 +1,36 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Eco Quest</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="startScreen">
+        <h1>Eco Quest</h1>
+        <p>Welcome to Eco Quest!</p>
+        <p>Answer questions about Earth, climate, wildlife, and nature.<br> Complete every round and prove that you are an Earth Champion!</p>
+       <button id="startButton">Start Game</button> 
+    </div>
+    <div class="gameScreen">
+        <h2>Round 1</h2>
+        <p>Question 1/5</p>
+        <p>Time: <span id="timer">15</span> seconds</p>
+        <h3 id="question"></h3>
+        <div id="options"></div>
+    </div>
+    <section class="roundResultScreen">
+        <h2>Round Score:</h2>
+        <h3 id="roundScore"></h3>
+        <p id="roundMessage"></p>
+        <button id="nextRound">Next Round</button>
+    </section>
+    <section class="finalResultScreen">
+        <h2>Final Score:</h2>
+        <h3 id="finalScore"></h3>
+        <p id="finalMessage"></p>
+        <button id="restartGame">Restart Game</button>
+    </section> 
 </body>
 </html>
